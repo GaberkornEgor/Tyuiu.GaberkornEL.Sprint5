@@ -8,7 +8,7 @@ namespace Tyuiu.GaberkornEL.Sprint5.Task1.V30
             int startValue = -5;
             int stopValue = 5;
             DataService ds = new DataService();
-            Console.Title = "Спринт #5 | Выполнила: Габеркорн Егор Леонидович | АСОиУб-25-1 ";
+            Console.Title = "Спринт #5 | Выполнила: Габеркорн Егор Леонидович  | АСОиУб-25-1 ";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Задание #1                                                              *");
