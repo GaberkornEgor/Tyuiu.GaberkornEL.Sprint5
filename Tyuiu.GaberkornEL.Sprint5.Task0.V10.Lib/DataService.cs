@@ -1,22 +1,18 @@
-﻿using System.IO;
-using System.IO.Compression;
+﻿using System;
+using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
+
 namespace Tyuiu.GaberkornEL.Sprint5.Task0.V10.Lib
 {
     public class DataService : ISprint5Task0V10
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.GetTempFileName();
-            double z = (1.6 * Math.Pow((double)x, 3) - 2.1 * Math.Pow((double)x, 2) + 7 * x);
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
+            double z = 1.6 * Math.Pow(x, 3) - 2.1 * Math.Pow(x, 2) + 7 * x;
             z = Math.Round(z, 3);
-            File.WriteAllText(path, Convert.ToString(z));
+            File.WriteAllText(path, z.ToString());
             return path;
         }
-    }
-
-    public interface ISprint5Task0V10
-    {
-        string SaveToFileTextData(int x);
     }
 }
