@@ -14,4 +14,8 @@ namespace Tyuiu.GaberkornEL.Sprint5.Task0.V10.Lib
             return path;
         }
     }
+
+    public interface ISprint5Task0V10
+    {
+    }
 }
